@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ /* html{
+    font-size: 100px; 
+}  */
+
+body{
+    background-color: rgb(29 29 29);
+    color:orange
+}
+
+header {
+    height: 5rem;
+    display: flex;
+    background-color: black;
+    /* color:orange; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+header h1{
+    font-weight: 700;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+header ul{
+display: flex;
+gap: 20px;
+margin: 20px;
+}
+
+header ul li{
+    list-style: none;
+    margin: 0 1rem;
+    font-size:  15px;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.menu-btn{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+
+.menu-btn span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    
+}
+
+#side-drawer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29 29 29);
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+} 
+#side-drawer:target{
+    display: block;
+}
+
+#side-drawer header {
+    height: 5rem;
+    display: flex;
+    background-color: black;
+    /* color:orange; */
+    justify-content:flex-end;
+    align-items: center;
+    padding: 0 5%;
+}
+    
+}
+
+#side-drawer header span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    
+}
+
+#side-drawer ul{
+display: flex;
+padding: 4rem 1rem;
+align-items: center;
+flex-direction: column;
+list-style: none;
+}
+
+#side-drawer li{
+    margin: 2rem;
+}
+
+#side-drawer li a{
+    font-size: 2rem;
+}
+
+
+
+
+main{
+    text-align: center;
+    
+}
+
+main h1{
+    font-size:  3rem;
+    margin: 30px;
+}
+
+.food{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1rem;
+   width: 70%;
+    height: fit-content;
+    border-radius: 8px;
+    margin: 2rem auto;
+    border-radius: 5px;
+  
+}
+
+.food li{
+    
+    list-style: none;
+    background-color: peachpuff;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow:-1px 11px 20px -5px rgba(0,0,0,0.21);
+}
+
+.food img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    
+    display: block;
+}
+
+.details{
+   text-align: center;
+    padding: 5%;
+    
+}
+
+.details h2{
+    color: rgb(44, 43, 43);
+    font-weight: 700;
+    margin: 15px auto;
+   
+}
+.details a{
+    display: block;
+    width: fit-content;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.5rem 1.5rem;
+    background-color: orange;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+.details a:hover{
+    background-color: rgb(221, 146, 8);
+}
+
+
+@media (max-width: 48rem) {
+
+    header ul{
+        display:none;
+    }   
+
+    .menu-btn{
+        display: flex;
+    }
+  
+
+   .food{
+        grid-template-columns:100% ;
+         }
+
+
+         main h1{
+            font-size:  1.2rem;
+           
+        }
+
+        
+        
+        
+        
+}
